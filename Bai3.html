@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let num = 'Hello ConBai'
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz'
+    let result = [ ];
+    for (let i = 0; i < num.length ; i++) {
+        if (UPPER.indexOf(num[i]) !== -1) {
+            result.push(num[i].toLowerCase())
+        } else if (LOWER.indexOf(num[i]) !== -1) {
+            result.push(num[i].toUpperCase())
+        } else {
+            result.push(num[i])
+        }
+    }
+    console.log(result.join(' '))
+</script>
+</body>
+</html>
